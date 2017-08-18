@@ -1,5 +1,12 @@
-@Given ('^I input two valid numbers')
+import org.testng.Assert;
+import org.testng.annotations.Test;
+  
+class addNumbersAcceptanceTest {
 
-@When ('^I add the two numbers')
+  @Given ('^I input two valid numbers')
 
-@Then ('^result will be returned')
+  @When ('^I add the two numbers')
+
+  @Then ('^result will be returned')
+
+}
