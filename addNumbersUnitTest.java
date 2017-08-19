@@ -1,24 +1,16 @@
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.java.en.Then;
 
 public class addTwoNumbers {
-@Test
-	public int whenTwoNumbersAddedThenSumWillReturn () {		
-  	@Given ('^I input two valid numbers')
-		public void getInt(){
-		
+	int result;
+	
+  	@When ('^I add the two numbers$')
+		public void addInt(int i, int j) throws Throwable {
+			result = i + j;
 		}
-  	@When ('^I add the two numbers')
-		public void addInt(){
-			
-		}
-  	@Then ('^result will be returned')
-		public int sumResult(){
-			
+  	@Then ('^result will be returned$')
+		public int sumResult() throws Throwable {
+			return result;
 		}
 	}
 
