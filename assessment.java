@@ -6,20 +6,13 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("/assessment")
-public class CalcREST {
+public class Assessment {
 
-    /*@GET
+    @GET
     @Path("/add/{a}/{b}")
     @Produces(MediaType.TEXT_PLAIN)
     public String addPlainTextPost(@PathParam("a") double a, @PathParam("b") double b) {
         return (a + b) + "";
-    }*/
-
-    @POST
-    @Path("/add/{a}/{b}")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String addPlainTextPost(@PathParam("a") double a, @PathParam("b") double b) {
-        return addPlainText(a,b);
     }
 
     public String addPlainText(double a, double b) {
