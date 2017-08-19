@@ -7,7 +7,7 @@ public class addNumbersAcceptanceTest {
     { 
       try {
         int i = Integer.parseInt(s);
-        Assert.assertEquals(true, isInt(s));
+        Assert.assertEquals(true, isInt(i));
       }
       catch(NumberFormatException er) {
         return false;
