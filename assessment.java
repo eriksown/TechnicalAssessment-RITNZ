@@ -14,8 +14,4 @@ public class Assessment {
     public String addPlainTextPost(@PathParam("a") double a, @PathParam("b") double b) {
         return (a + b) + "";
     }
-
-    public String addPlainText(double a, double b) {
-        return (a + b) + "";
-    }
  }
