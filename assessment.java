@@ -13,5 +13,9 @@ public class Assessment {
     @Produces(MediaType.TEXT_PLAIN)
     public String addPlainTextPost(@PathParam("a") double a, @PathParam("b") double b) {
         return (a + b) + "";
+    }    
+
+    public double addPlainText(double a, double b) {
+        return (a + b);
     }
  }
