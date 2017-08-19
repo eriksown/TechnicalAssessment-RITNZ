@@ -1,12 +1,16 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
   
-class addNumbersAcceptanceTest {
-
-  @Given ('^I input two valid numbers')
-
-  @When ('^I add the two numbers')
-
-  @Then ('^result will be returned')
-
+public class addNumbersAcceptanceTest {
+@Test 
+  public static boolean isInt(String s)
+    { 
+      try {
+        int i = Integer.parseInt(s);
+        Assert.assertEquals(true, isInt(s));
+      }
+      catch(NumberFormatException er) {
+        return false;
+      }
+    }
 }
